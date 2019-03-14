@@ -7,6 +7,12 @@
 (function($) {
 	let date = $('.date')
 	date.html(new Date().toLocaleDateString())
+
+	//form
+	$( "#target" ).submit(function( event ) {
+		event.preventDefault();
+		alert( "Handler for .submit() called." );
+	  });
 	var	$window = $(window),
 		$body = $('body'),
 		$wrapper = $('#wrapper'),
@@ -257,3 +263,4 @@
 		}
 
 })(jQuery);
+
